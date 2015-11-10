@@ -8,7 +8,7 @@ def sample(q):
     from  random import uniform
     U = uniform(0,1)
     f = (np.zeros(len(q))+q).cumsum()
-    return (np.searchsorted(f,U))
+    return np.searchsorted(f,U)
 
 class discreteRV:
     def __init__(self, q):
@@ -17,7 +17,7 @@ class discreteRV:
         from  random import uniform
         U = uniform(0,1)
         f = (np.zeros(len(self.q))+self.q).cumsum()
-        return (np.searchsorted(f,U))
+        return np.searchsorted(f,U)
 		
 #3
 class ECDF:
