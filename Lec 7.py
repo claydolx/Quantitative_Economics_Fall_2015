@@ -7,5 +7,5 @@ def bisect(f, a, b, tol=10e-5):
         return bisect(f=f, a=(a+b)/2, b=b)
 
 #赠品
-#面试题：一句话（一行语句）给出计算Fibonacci第N项数值的函数定义（不能使用Closed Form公式）
+#矿工面试题：一句话（一行语句）给出计算Fibonacci第N项数值的函数定义（不能使用Closed Form公式）
 Fibonacci = lambda n: 1 if n<3 else Fibonacci(n-1) + Fibonacci(n-2)
